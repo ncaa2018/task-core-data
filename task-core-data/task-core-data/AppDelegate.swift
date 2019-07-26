@@ -7,7 +7,8 @@
 //
 
 import UIKit
-// TODO: import CoreData
+import CoreData
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -15,11 +16,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     // TODO: Initialize a lazy var called persistentContainer that represents
     // our container to the data model
+    lazy var persistentContainer: NSPersistentContainer = {
+        let container = NSPersistentContainer(name: "tasklist")
+        container.loadPersistentStores {description, error in
+            if let error = error {
+                fatalError("Unable to load persistent stores: \(error)")
+            }
+        }
+        return container
+    }()
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         // TODO: Send the container down to the view controller
+        //passing container that stores data model and passing it in
+        //rootVC first ViewController
+        if let rootVC = window?.rootViewController as? ViewController {
+            rootVC.container = persistentContainer         }
         return true
     }
 

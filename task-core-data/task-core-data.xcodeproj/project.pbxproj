@@ -14,6 +14,7 @@
 		10BC530722EA54DB00B17DF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10BC530522EA54DB00B17DF5 /* LaunchScreen.storyboard */; };
 		10BC531222EA54DB00B17DF5 /* task_core_dataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BC531122EA54DB00B17DF5 /* task_core_dataTests.swift */; };
 		10BC531D22EA54DB00B17DF5 /* task_core_dataUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BC531C22EA54DB00B17DF5 /* task_core_dataUITests.swift */; };
+		1894D4B822EB5D4E00890CDE /* tasklist.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1894D4B622EB5D4E00890CDE /* tasklist.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		10BC531822EA54DB00B17DF5 /* task-core-dataUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "task-core-dataUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		10BC531C22EA54DB00B17DF5 /* task_core_dataUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = task_core_dataUITests.swift; sourceTree = "<group>"; };
 		10BC531E22EA54DB00B17DF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1894D4B722EB5D4E00890CDE /* tasklist.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = tasklist.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		10BC52F022EA54D900B17DF5 = {
 			isa = PBXGroup;
 			children = (
+				1894D4B622EB5D4E00890CDE /* tasklist.xcdatamodeld */,
 				10BC52FB22EA54D900B17DF5 /* task-core-data */,
 				10BC531022EA54DB00B17DF5 /* task-core-dataTests */,
 				10BC531B22EA54DB00B17DF5 /* task-core-dataUITests */,
@@ -257,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				10BC52FF22EA54D900B17DF5 /* ViewController.swift in Sources */,
+				1894D4B822EB5D4E00890CDE /* tasklist.xcdatamodeld in Sources */,
 				10BC52FD22EA54D900B17DF5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -580,6 +584,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1894D4B622EB5D4E00890CDE /* tasklist.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1894D4B722EB5D4E00890CDE /* tasklist.xcdatamodel */,
+			);
+			currentVersion = 1894D4B722EB5D4E00890CDE /* tasklist.xcdatamodel */;
+			path = tasklist.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 10BC52F122EA54D900B17DF5 /* Project object */;
 }
